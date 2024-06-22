@@ -13,7 +13,7 @@ function Logo() {
         quality={100}
       />
       {/* <Image src="/logo.png" height="60" width="60" alt="The Wild Oasis logo" /> */}
-      <span className="text-xl font-semibold text-primary-100">
+      <span className="text-sm sm:text-xl font-semibold text-primary-100">
         The Wild Oasis
       </span>
     </Link>
