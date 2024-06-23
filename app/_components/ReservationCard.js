@@ -24,7 +24,7 @@ function ReservationCard({ booking, onDelete }) {
   } = booking;
 
   return (
-    <div className="flex border border-primary-800">
+    <div className="flex flex-col sm:flex-row border border-primary-800 ">
       <div className="relative h-32 aspect-square">
         <Image
           src={image}
@@ -34,9 +34,9 @@ function ReservationCard({ booking, onDelete }) {
         />
       </div>
 
-      <div className="flex-grow px-6 py-3 flex flex-col">
+      <div className="flex-grow px-3 sm:px-6 py-3 flex flex-col">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold">
+          <h3 className=" text-xs sm:text-xl sm:font-semibold">
             {numNights} nights in Cabin {name}
           </h3>
           {isPast(new Date(startDate)) ? (
