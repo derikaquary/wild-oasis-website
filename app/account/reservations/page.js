@@ -13,11 +13,11 @@ export default async function Page() {
 
   return (
     <div>
-      <h2 className="font-semibold text-2xl text-accent-400 mb-7">
+      <h2 className="font-semibold text-lg sm:text-2xl text-accent-400 mb-7">
         Your reservation
       </h2>
       {bookings.length === 0 ? (
-        <p className="text-lg">
+        <p className="text-xs sm:text-lg">
           You have no reservations yet. Check out our{" "}
           <Link className="underline text-accent-500" href="/cabins">
             luxury cabins &rarr;
