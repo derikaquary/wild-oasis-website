@@ -5,8 +5,8 @@ import { EyeSlashIcon, MapPinIcon, UsersIcon } from "@heroicons/react/24/solid";
 function Cabin({ cabin }) {
   const { name, maxCapacity, image, description } = cabin;
   return (
-    <div className="grid grid-cols-[3fr_4fr] gap-20 border border-primary-800 py-3 px-10 mb-24">
-      <div className="relative scale-[1.15] -translate-x-3">
+    <div className=" grid grid-rows-1 sm:grid-cols-[3fr_4fr] gap-10 sm:gap-20 border border-primary-800 py-3 px-10 mb-14 sm:mb-24">
+      <div className="relative scale-[1.15] sm:-translate-x-3 aspect-video sm:aspect-auto mt-2 sm:mt-0">
         <Image
           src={image}
           alt={`Cabin ${name}`}
@@ -16,7 +16,7 @@ function Cabin({ cabin }) {
       </div>
 
       <div>
-        <h3 className="text-accent-100 font-black text-7xl mb-5 translate-x-[-254px] bg-primary-950 p-6 pb-1 w-[150%]">
+        <h3 className="text-accent-100 font-black text-5xl sm:text-7xl mb-5 sm:translate-x-[-254px] translate-x-[-30] bg-primary-950 p-6 pb-1 w-[150%]">
           Cabin {name}
         </h3>
 
